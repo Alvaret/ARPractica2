@@ -1,0 +1,223 @@
+/* Importar la letra desded Google Fons */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Reset de valores por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* Fuente de Google Fons */
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Página index */
+
+#body_index {
+  /* Especificaciones de la página */
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* Imagen de fondo*/
+  background-image: url("../img/home-hero.jpg");
+  background-position: top;
+  background-size: cover;
+  
+
+  /* Textos en blanco para todo el documento */
+  color: #ffffff;
+}
+
+/* Color para los enlaces y para la propiedad hover */
+#body_index a {
+  color: #ffffff;
+}
+
+#body_index a:hover {
+  color: #6bdec8;
+}
+
+/* Menu del header */
+
+#body_index header {
+    padding-top:2em ;
+  text-align: center;
+}
+
+#body_index header ul {
+  display: flex;
+  justify-content: center;
+}
+
+#body_index header li {
+  display: inline-block;
+  margin: 1em;
+}
+
+/* Contenido del main */
+#body_index main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#body_index main img {
+    width: 6em;
+}
+
+#body_index main h1 {
+  text-transform: lowercase;
+  font-size: 11em;
+  letter-spacing: -10px;
+}
+
+#body_index main h2 {
+  font-size: 3em;
+  letter-spacing: 0.15em;
+}
+
+/*Contenido del footer */
+#body_index footer {
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#body_index footer ul {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
+#body_index footer li {
+  display: inline-block;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+
+#body_index footer p {
+  
+  margin-bottom: 1em;
+}
+
+
+
+
+/* Creacion del header y footer para las demas paginas */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+}
+
+/* Menu del header */
+
+.header_compartido {
+    padding-top:2em ;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #000000 ;
+  padding-bottom: 3em ;
+}
+
+.header_compartido ul {
+  display: flex;
+  justify-content: center;
+}
+
+.header_compartido li {
+  display: inline-block;
+  margin: 0.5em;
+  
+  
+}
+
+.header_compartido a {
+    color: #ffffff;
+}
+.header_compartido a:hover{
+    color: #6bdec8;
+}
+
+.header_compartido h1 {
+    font-size: 3em;
+    padding-bottom: 0.1em;
+    letter-spacing: -4px;
+}
+
+.header_compartido img {
+    width: 0.7em;
+    
+}
+
+.actual {
+    border-bottom: 2px solid #FFFFFF ;
+    padding-bottom: 1em;
+}
+
+
+/* Creacion del footer */
+
+.footer_compartido {
+    margin-top: auto;
+    text-align: left;
+    background-color: #000000;
+  }
+  
+  .footer_compartido ul {
+    display: flex;
+    justify-content: left;
+    font-size: large;
+  }
+  
+  .footer_compartido li {
+    display: inline-block;
+    margin:  1em 1em 1em 0em;
+    margin-bottom: 2em;
+  }
+  
+  .footer_compartido p {
+    padding-bottom: 4em;
+    font-size: small;
+
+  }
+
+  .footer_compartido , .footer_compartido a {
+    color: #ffffff;
+  }
+
+  .footer_compartido a:hover{
+    color: #6bdec8;
+}
+
+
+/* Formateo Específico */
+.texto_mayus {
+  text-transform: uppercase;
+}
+
+.texto_grande {
+  font-size: x-large;
+}
+
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
