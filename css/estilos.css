@@ -276,6 +276,88 @@ main{
   font-weight: bold;
 }
 
+/* Página de cursos */
+
+#main_cursos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main_cursos .titulo1{
+  margin-top: 2em;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#main_cursos .titulo2 {
+  margin-bottom: 1em;
+  font-size: 300%;
+  text-align: center;
+}
+
+#main_cursos #container_principal{
+  width: 70%;
+}
+
+#main_cursos img {
+  height: auto;
+  width: 100%;
+}
+
+#main_cursos #contenedor_figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto 2em auto;
+}
+
+#main_cursos figure figcaption{
+  font-size: smaller;
+}
+
+
+#main_cursos #container_principal #texto {
+  margin-top: 2em;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#main_cursos .tabla-precios {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: small;
+}
+
+#main_cursos .tabla-precios th,
+#main_cursos .tabla-precios td {
+  
+  padding: 10px;
+}
+
+#main_cursos .tabla-precios th {
+  font-weight: 400;
+  font-size: large;
+}
+
+
+
+/*Clases para la tabla */
+
+.borde_superior{
+  border-top: 1px solid #000000;
+}
+
+.borde_inferior{
+  border-bottom: 1px solid #000000;
+}
+
+.fondo_color{
+  background-color: #6bdec8;
+}
+
+
+
 /* Formateo Específico */
 .texto_mayus {
   text-transform: uppercase;
@@ -285,10 +367,23 @@ main{
   font-size: x-large;
 }
 
+.texto_negrita {
+  font-weight: 700;
+}
+
+.texto_mediano{
+  font-size: medium;
+}
+
+.texto_normal{
+  font-weight: 400;
+}
+
 .container {
     width: 95%;
     max-width: 1140px;
     margin: 0 auto;
+    
   }
 
 .enlace_predefinido {

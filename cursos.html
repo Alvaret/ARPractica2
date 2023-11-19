@@ -2,15 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta
-      name="description"
-      content="Página para saber los cursos disponibles en el taller"
-    />
-    <meta name="author" content="Alvaro Ruiz" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <meta name="description" content="Página para saber los cursos disponibles en el taller" >
+    <meta name="author" content="Alvaro Ruiz" >
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/estilos.css" >
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" >
     <title>el taller | Cursos</title>
 </head>
 
@@ -18,7 +15,7 @@
     <header class="header_compartido">
         <h1>
             <a href="index.html">
-                <img src="img/isologo-taller.png" alt="logo-eltaller" />                
+                <img src="img/isologo-taller.png" alt="logo-eltaller" >
             </a>
             el taller
         </h1>
@@ -36,11 +33,78 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cupiditate
-        amet eius, vitae voluptatibus placeat eveniet deserunt voluptate tempora
-        accusamus dolore odio aut similique, beatae velit omnis itaque quam
-        nostrum?
+    <main class="container" id="main_cursos">
+
+        <section id="container_principal">
+            <h2 class="titulo1">Cursos de cerámica</h2>
+            <h2 class="titulo2 "><time datetime="2023">2023</time></h2>
+
+            <div id="contenedor_figure">
+                <figure>
+                    <img src="img/cursos-ceramica.jpg" alt="Fotogracia de ceramica">
+                    <figcaption>
+                        &copy; Foto de
+                        <a class="enlace_predefinido" href="https://unsplash.com/@courtneymcook">
+                            Courtney Cook
+                        </a>
+                        en
+                        <a class="enlace_predefinido" href="https://unsplash.com/es/fotos/jZLozXwxgbo">
+                            Unsplash
+                        </a>
+                    </figcaption>
+                </figure>
+                <p id="texto">Cursos de cerámica para todos los niveles. Artesanos expertos te guiarán para que aprendas
+                    el oficio y des rienda suelta
+                    a tu creatividad.</p>
+            </div>
+        </section>
+
+        <table class="tabla-precios">
+            <tbody>
+                <tr class="borde_superior ">
+                    <th colspan="4">Programación de cursos</th>       
+                </tr>
+                <tr class="borde_superior ">
+                    <td>Curso</td>
+                    <td>Precio</td>
+                    <td>Duración</td>
+                    <td>Horario</td>
+                </tr>
+                <tr class="borde_superior fondo_color">
+                    <td class="texto_negrita texto_mediano" >Torno</td>
+                    <td>150 €</td>
+                    <td>4 horas</td>
+                    <td>Un sábado al mes de 10 a 14 h</td>
+                </tr>
+                <tr>
+                    <td class="texto_negrita texto_mediano" >Cerámica</td>
+                    <td>100 €</td>
+                    <td>4 horas</td>
+                    <td>Jueves alternos de 19 a 21 h</td>
+                </tr>
+                <tr class="fondo_color" >
+                    <td class="texto_negrita texto_mediano" >Modelado</td>
+                    <td>200 €</td>
+                    <td>12 horas</td>
+                    <td>Un miércoles al mes de 18 a 21 h</td>
+                </tr>
+                <tr>
+                    <td class="texto_negrita texto_mediano" >Esmaltes</td>
+                    <td>250 €</td>
+                    <td>16 horas</td>
+                    <td>Martes y jueves de 19 a 21 h</td>
+                </tr>
+                <tr class="fondo_color" >
+                    <td class="texto_negrita texto_mediano" >Joyería cerámica</td>
+                    <td>160 €</td>
+                    <td>4 horas</td>
+                    <td>Un viernes al mes de 16 a 20 h</td>
+                </tr>
+                <tr class="borde_inferior">
+                    <td colspan="4">Plazas limitadas a 15 alumnos por sesión</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer class="footer_compartido">
