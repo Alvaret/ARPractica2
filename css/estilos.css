@@ -218,14 +218,14 @@ main{
   
 }
 
-#main_ceramica h1 {
+#main_ceramica h2 {
   text-align: center;
   font-size: xx-large;
   margin: 1em;
   
 }
 
-#main_ceramica figure {
+#main_ceramica #contenedor_figure {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,9 +236,10 @@ main{
   font-size: smaller;
 }
 
-#main_ceramica h2 {
+#main_ceramica h3 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid #000000;
+  font-size: x-large;
 }
 
 #main_ceramica li {
