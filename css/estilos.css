@@ -175,7 +175,7 @@ main{
 /* Creacion del footer */
 
 .footer_compartido {
-    margin-top: auto;
+    margin-top: 2em;
     text-align: left;
     background-color: #000000;
   }
@@ -207,6 +207,74 @@ main{
 }
 
 
+
+
+/* Página que es la ceramica */
+
+#main_ceramica  p {
+  color: #000000;
+  font-weight: 100;
+  margin: 1em 0em 1em 0em;
+  
+}
+
+#main_ceramica h1 {
+  text-align: center;
+  font-size: xx-large;
+  margin: 1em;
+  
+}
+
+#main_ceramica figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto 2em auto;
+}
+
+#main_ceramica figure figcaption{
+  font-size: smaller;
+}
+
+#main_ceramica h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #000000;
+}
+
+#main_ceramica li {
+  list-style: square;
+  margin-bottom: 0.5em;
+  margin-left: 3em;
+}
+
+
+#main_ceramica dt {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+
+}
+
+#main_ceramica dl {
+  margin-left: 4em;
+}
+
+#main_ceramica dd {
+  margin-bottom: 0.7em;
+  margin-left: 3em;
+}
+
+#main_ceramica p , #main_ceramica dd {
+  line-height: 1.5em;
+  font-weight: 100;
+  text-align: start;
+  font-size: large;
+}
+
+#main_ceramica p strong {
+  font-weight: bold;
+}
+
 /* Formateo Específico */
 .texto_mayus {
   text-transform: uppercase;
@@ -221,3 +289,17 @@ main{
     max-width: 1140px;
     margin: 0 auto;
   }
+
+.enlace_predefinido {
+  color: #942C0B;  
+  border-bottom: 1px dotted #942C0B; 
+}
+
+.enlace_predefinido:hover {
+  border-bottom: 1px solid #942C0B;
+}
+
+.margin_top {
+  margin-top: 1em;
+}
+
