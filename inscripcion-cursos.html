@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta name="description" content="Página para incribirse en cursos de cerámica" />
-    <meta name="author" content="Alvaro Ruiz" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <meta name="description" content="Página para incribirse en cursos de cerámica" >
+    <meta name="author" content="Alvaro Ruiz" >
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/estilos.css" >
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" >
     <title>el taller | Inscripción</title>
 </head>
 
@@ -15,7 +15,7 @@
     <header class="header_compartido">
         <h1>
             <a href="index.html">
-                <img src="img/isologo-taller.png" alt="logo-eltaller" />
+                <img src="img/isologo-taller.png" alt="logo-eltaller">
             </a>
             el taller
         </h1>
@@ -33,38 +33,38 @@
             </ul>
         </nav>
     </header>
-    <main class="container" id="main_formulario">
+    <main id="main_formulario">
         <article>
             <h2>Inscripción a los cursos</h2>
 
-            <p>Los campos marcados con * son obligatorios</p>
+            <p class="texto_obligacion">Los campos marcados con * son obligatorios</p>
             <form action="#" method="post">
                 <fieldset class="organizar_grid">
                     <legend>Detalles de la Inscripción</legend>
 
                     <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required />
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" id="nombre" name="nombre" required >
                     </div>
 
                     <div>
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" id="apellidos" name="apellidos" required />
+                        <label for="apellidos">Apellidos*</label>
+                        <input type="text" id="apellidos" name="apellidos" required >
                     </div>
                     <div>
-                        <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" name="correo" required />
+                        <label for="correo">Correo electrónico*</label>
+                        <input type="email" id="correo" name="correo" required >
                     </div>
                     <div>
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required />
+                        <label for="telefono">Teléfono*</label>
+                        <input type="tel" id="telefono" name="telefono" required >
                     </div>
                     <div>
-                        <label for="fecha_nacimiento">Fecha de nacimiento</label>
-                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required />
+                        <label for="fecha_nacimiento">Fecha de nacimiento*</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required >
                     </div>
                     <div>
-                        <label for="curso">Curso</label>
+                        <label for="curso">Curso*</label>
                         <select id="curso" name="curso" required>
                             <option value="" disabled selected>Seleccionar Curso</option>
                             <option value="torno">Torno</option>
@@ -76,19 +76,19 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="margin_top">
                     <legend>Otras informaciones</legend>
 
                     <fieldset class="flex_columna">
-                        <legend>¿Has hecho otros cursos con nosotros?</legend>
+                        <legend>¿Has hecho otros cursos con nosotros?*</legend>
                         <div>
 
-                            <input type="radio" id="otros_si" name="otros" value="si" required />
+                            <input type="radio" id="otros_si" name="otros" value="si" required >
                             Sí
                         </div>
                         <div class="margin_top">
 
-                            <input type="radio" id="otros_no" name="otros" value="no" required />
+                            <input type="radio" id="otros_no" name="otros" value="no" required >
                             No
                         </div>
 
@@ -97,31 +97,31 @@
                     <textarea class="margin_top margin_bot" id="comentario" name="comentario"></textarea>
                 </fieldset>
 
-                <fieldset class="flex_columna">
+                <fieldset class="flex_columna margin_top" id="metodo_pago">
                     <legend>Elige el método de pago*</legend>
 
                     <div>
 
                         <input class="margin_top" type="radio" id="metodo_pago_transferencia" name="metodo_pago"
-                            value="transferencia" required />
-                        Transferencia
+                            value="transferencia" required >
+                            Transferencia
                     </div>
                     <div>
 
                         <input class="margin_top" type="radio" id="metodo_pago_tarjeta" name="metodo_pago"
-                            value="tarjeta" required />
-                        Tarjeta
+                            value="tarjeta" required >
+                            Tarjeta de débito / crédito
                     </div>
                     <div>
 
                         <input class="margin_top" type="radio" id="metodo_pago_efectivo" name="metodo_pago"
-                            value="efectivo" required />
-                        Efectivo
+                            value="efectivo" required >
+                            En efectivo
                     </div>
 
                 </fieldset>
 
-                <p>
+                <p id="texto_politica">
                     INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
                     <strong> EL TALLER. Finalidades</strong>: recogida de datos para la
                     inscripción como socio del interesado.
@@ -138,11 +138,14 @@
                     <a class="enlace_predefinido" href="#">Política de privacidad</a>.
                 </p>
 
-                <input type="checkbox" id="acepto_politica_privacidad" name="acepto_politica_privacidad" required />
+                <div class="check_politica">
+                <input type="checkbox" id="acepto_politica_privacidad" name="acepto_politica_privacidad" required >
                 <label for="acepto_politica_privacidad">He leído y acepto la
-                    <a class="enlace_predefinido" href="#">política de privacidad</a></label>
+                    <a class="enlace_predefinido" href="#">política de privacidad</a>*
+                </label>
+                </div>
 
-                <input type="submit" value="Inscribirme" />
+                <input class="boton_formulario" type="submit" value="Inscríbeme" >
             </form>
         </article>
     </main>

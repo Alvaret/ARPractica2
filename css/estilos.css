@@ -360,6 +360,12 @@ main{
 
 
 /* Página del formulario */
+#main_formulario{
+  width: 90%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 fieldset{
   border: 1px solid #000000;
   padding: 1em;
@@ -418,6 +424,48 @@ label{
 
 }
 
+#main_formulario .check_politica {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+#texto_politica {
+
+margin: 1em 0;
+font-weight: 400;
+text-align: left;
+line-height: 1.4em;
+}
+
+#main_formulario  h2 {
+  text-align: center;
+  margin: 1em;
+  font-size: xx-large;
+}
+
+#main_formulario .texto_obligacion {
+  font-size: small;
+  margin-bottom: 2em;
+}
+
+#metodo_pago{
+  padding-bottom: 1em;
+}
+#metodo_pago div{
+  margin-bottom: 1em;
+}
+
+.boton_formulario{
+  background-color: #942C0B;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 1em;
+  padding: 1em;
+}
+.boton_formulario:hover{
+  cursor: pointer;
+}
 
 /* Formateo Específico */
 .texto_mayus {
